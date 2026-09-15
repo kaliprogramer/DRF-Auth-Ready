@@ -1,0 +1,30 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "kaliprogramer", email = "kaliprogrammer32@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "channels>=4.3.2",
+    "channels-redis>=4.3.0",
+    "django>=6.1.1",
+    "django-cors-headers>=4.9.0",
+    "django-filter>=26.1",
+    "djangorestframework>=3.18.1",
+    "djangorestframework-simplejwt[crypto]>=5.5.1",
+    "drf-spectacular>=0.30.0",
+    "markdown>=3.10.3",
+    "pillow>=12.3.0",
+    "python-dotenv>=1.2.3",
+    "redis>=8.1.0",
+]
+
+[project.scripts]
+backend = "backend:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
